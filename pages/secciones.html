@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../dist/output.css" />
+
+    <!--SWIPER CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!--Header-------------------------------------------------------------------------->
+    <header class="sticky top-0 h-[90px] shadow-md z-30 bg-white">
+      <div class="container mx-auto flex justify-between h-full items-center">
+        <!--Logo-->
+        <a href="">
+          <img
+            class="w-52"
+            src="../Assets/Logo/LogoRGB_FondoClaro.png"
+            alt="Logo"
+          />
+        </a>
+        <!--Nav----------------------------------------->
+        <nav>
+          <!--Nav mobile menu Hamburger-->
+          <div class="cursor-pointer lg:hidden" id="nav_trigger_btn">
+            <i class="ri-menu-4-line text-4xl text-primary"></i>
+          </div>
+          <ul
+            class="fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
+            id="nav_menu"
+          >
+            <li class="mx-auto my-auto"><a href="../index.html">Inicio</a></li>
+            <li class="mx-auto my-auto"><a href="#">La Cooperativa</a></li>
+            <li class="mx-auto my-auto">
+              <a href="pages/secciones.html">Secciones</a>
+            </li>
+            <li class="mx-auto my-auto"><a href="#">Contacto</a></li>
+            <li class="mx-auto">
+              <button class="btn btn-primary xl:mx-0">
+                Socios
+                <i class="ri-user-line text-accent"></i>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--Banners---------------------------------------------------------------------------->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img
+            src="https://http2.mlstatic.com/D_NQ_600952-MLA75911650340_042024-OO.webp"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://http2.mlstatic.com/D_NQ_800318-MLA75914339996_042024-OO.webp"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://http2.mlstatic.com/D_NQ_809514-MLA75934479830_042024-OO.webp"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://http2.mlstatic.com/D_NQ_926790-MLA76111412855_042024-OO.webp"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://http2.mlstatic.com/D_NQ_641484-MLA76089626995_042024-OO.webp"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+    <!--SWIPER JS-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--Main Js-->
+    <script src="../js/main.js"></script>
+  </body>
+</html>

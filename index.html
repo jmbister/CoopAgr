@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soc. Coop. Agr. Gan. Ltda.</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="dist/output.css" />
+    <!--ICONS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--SWIPER CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+      <!--Header-------------------------------------------------------------------------->
+      <header class="absolute top-0 left-0 w-full h-[90px] z-30 bg-transparent">
+      <div class="container mx-auto flex justify-between h-full items-center">
+        <!--Logo-->
+        <a href="">
+          <img
+            class="w-52"
+            src="Assets/Logo/LogoRGB_FondoOscuro.png"
+            alt="Logo"
+          />
+        </a>
+        <!--Nav----------------------------------------->
+        <nav>
+          <!--Nav mobile menu Hamburger-->
+          <div class="cursor-pointer lg:hidden" id="nav_trigger_btn">
+            <i class="ri-menu-4-line text-4xl text-white"></i>
+          </div>
+          <ul
+            class="fixed w-full h-0 p-0 bg-white lg:bg-transparent overflow-hidden top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
+            id="nav_menu"
+          >
+            <li class="mx-auto my-auto lg:text-white"><a href="#">Inicio</a></li>
+            <li class="mx-auto my-auto lg:text-white"><a href="#">La Cooperativa</a></li>
+            <li class="mx-auto my-auto lg:text-white">
+              <a href="pages/secciones.html">Secciones</a>
+            </li>
+            <li class="mx-auto my-auto lg:text-white"><a href="#">Contacto</a></li>
+            <li class="mx-auto">
+              <button class="btn btn-primary xl:mx-0">
+                Socios
+                <i class="ri-user-line text-accent"></i>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      </header>
+      <!--Contenedor--------------------->
+      <main class="max-w-[1920px] mx-auto bg-white overflow-hidden">
+      <!--Grid Img-->
+      <div
+      class="xl:bg-grid xl:bg-center xl:bg-repeat-y fixed top-0 bottom-0 left-0 right-0 z-10"
+      ></div>
+      <!--Hero--------------------------------------------------------------------------->
+      <section class="hero h-[640px] xl:h-[840px] relative z-20">
+        <!-- Video Background -->
+        <video class="absolute top-0 left-0 w-full h-full object-cover z-[-1]" autoplay loop muted playsinline>
+          <source src="Assets/Video/bgVideo.mp4" type="video/mp4">
+        </video>
+        <!-- Content -->
+        <div class="container mx-auto h-full flex items-center justify-center">
+          <!--Text-->
+          <div class="hero__text w-[567px] flex flex-col items-center text-center xl:text-left lg:items-start">
+            <h1 class="h1 mb-8 text-white font-black">
+            Desde 1943 apostando a los valores del Cooperativismo.
+            </h1>
+            <p class="mb-8 text-xl text-white">
+            Somos una Cooperativa del sudeste pampeano que trabaja junto al
+            productor para y por un futuro mejor.
+            </p>
+          </div>
+        </div>
+      </section>
+      </main>
+
+      <!--Weather-------------------------------------------------------------------------->
+      <section class="weather mt-[80px] xl:mt-[100px] relative z-20">
+        <div class="container mx-auto">
+          <div class="flex-col">
+            <h4 class="h4 mb-[20px] text-center font-semibold uppercase">
+              Clima en General San Martín, La Pampa.
+            </h4>
+            <div
+              class="m-auto mb-[32px] border-b border-accent w-[400px] lg:w-[550px]"
+            ></div>
+            <div
+              class="m-auto hidden md:flex"
+              id="TT_yetwLhthtWWB89jUVAujEy3fw6aUcYU"
+            ></div>
+            <div
+              class="m-auto md:hidden"
+              id="TT_FunwrBtxtMM9narKXfxzEymvAWnKB4K"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <!--Steps---------------------------------------------------------------------------->
+      <section class="steps mt-[80px] xl:mt-[100px] relative z-20">
+        <div class="container mx-auto">
+          <!--Grid Items-->
+          <div class="grid grid-cols-1 gap-12 xl:grid-cols-3">
+            <!--Step 1-->
+            <div class="steps__step text-center">
+              <div class="">
+                <i class="ri-price-tag-3-line text-5xl text-accent"></i>
+              </div>
+              <h3 class="h3 mb-2">Mercado de Hacienda</h3>
+              <p class="mb-3 max-w-md mx-auto">
+                Consulte los valores actualizados <br />
+                al día del Mercado de Liniers.
+              </p>
+              <a href="#" class="font-medium flex justify-center gap-2"
+                >Ir
+                <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+            <!--Step 2-->
+            <div class="steps__step text-center">
+              <div class="">
+                <i class="ri-funds-line text-5xl text-accent"></i>
+              </div>
+              <h3 class="h3 mb-2">Mercado de Granos</h3>
+              <p class="mb-3 max-w-md mx-auto">
+                Valores actualizados de los principales <br />
+                puertos cerealeros.
+              </p>
+              <a href="#" class="font-medium flex justify-center gap-2"
+                >Ir
+                <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+            <!--Step 3-->
+            <div class="steps__step text-center">
+              <div class="">
+                <i class="ri-money-dollar-circle-line text-5xl text-accent"></i>
+              </div>
+              <h3 class="h3 mb-2">Cotización Dólar</h3>
+              <p class="mb-3 max-w-md mx-auto">
+                Cotización al día <br />
+                Banco Nación.
+              </p>
+              <a href="#" class="font-medium flex justify-center gap-2"
+                >Ir
+                <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Hacienda--------------------------------------------------------------------->
+      <section class="mt-[80px] xl:mt-[150px] relative z-20 bg-hacend1 bg-center bg-no-repeat bg-cover">
+        <div class="container mx-auto px-6">
+          <div class="flex flex-col items-center pt-[88px] pb-[88px]">
+            <h2 class="h2 my-8 text-center font-bold">
+              Próximo Remate de Hacienda
+            </h2>
+            <!--slider-->
+            <div class="w-full">
+              <div class="h-[400px]">
+                <div class="">
+                  <!--Slide 1-->
+                  <div class="align-middle items-center mt-6">
+                    <!--Item-->
+                    <div
+                      class="w-full max-w-[370px] h-[300px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto"
+                    >
+                      <div class="flex gap-4 mb-6 items-center">
+                        <i class="ri-calendar-check-line text-4xl"></i>
+                        <div>
+                          <h3 class="h4">Viernes 10/05 - 14 Hs.</h3>
+                          <div>General San Martín | La Pampa</div>
+                        </div>
+                      </div>
+                      <p class="">
+                        Ruta Nac. N°35 Km. 147. <br />Gordo, invernada y cría.
+                        <br />Martillero: Javier Manzano.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Button HACEND-->
+            <div class="">
+              <a class="btn2 bg-accent hover:bg-amber-600 hover:text-white  text-[22px]" href=""
+                >Consigne su Hacienda</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Secciones----------------------------------------------------------------------------->
+      <section class="work mt-[80px] xl:mt-[150px] relative z-20">
+        <div class="container mx-auto xl:px-0">
+          <!--Text-->
+          <div class="text-center mb-16">
+            <h2 class="work__title h2 mb-1">Nuestras Secciones</h2>
+            <p class="work__subtitle max-w-3xl mx-auto">
+              Conozca nuestras secciones de negocio.
+            </p>
+          </div>
+          <!--Grid-->
+          <div
+            class="work__grid grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-8 items-center gap-x-[56px] gap-y-[48px]"
+          >
+            <!--Item 1-->
+            <div
+              class="max-w-[120px] max-h-[200px] mx-auto xl:hover:scale-150 hover:scale-125 transition-all duration-300"
+            >
+              <a href=""
+                ><img class="xl:w-[80px]" src="Assets/Secciones/1.png" alt=""
+              /></a>
+            </div>
+            <!--Item 2-->
+            <div
+              class="max-w-[120px] max-h-[200px] mx-auto xl:hover:scale-150 hover:scale-125 transition-all duration-300"
+            >
+              <a href=""
+                ><img class="xl:w-[75px]" src="Assets/Secciones/2.png" alt=""
+              /></a>
+            </div>
+            <!--Item 3-->
+            <div
+              class="max-w-[120px] max-h-[200px] mx-auto xl:hover:scale-150 hover:scale-125 transition-all duration-300"
+            >
+              <a href=""
+                ><img class="xl:w-[70px]" src="Assets/Secciones/3.png" alt=""
+              /></a>
+            </div>
+            <!--Item 4-->
+            <div
+              class="max-w-[120px] max-h-[200px] mx-auto xl:hover:scale-150 hover:scale-125 transition-all duration-300"
+            >
+              <a href=""
+                ><img class="xl:w-[70px]" src="Assets/Secciones/4.png" alt=""
+              /></a>
+            </div>
+            <!--Item 5-->
+            <div
+              class="max-w-[120px] max-h-[200px] mx-auto xl:hover:scale-150 hover:scale-125 transition-all duration-300"
+            >
+              <a href=""
+                ><img class="xl:w-[70px]" src="Assets/Secciones/5.png" alt=""
+              /></a>
+            </div>
+            <!--Item 6-->
+            <div
+              class="max-w-[120px] max-h-[200px] mx-auto xl:hover:scale-150 hover:scale-125 transition-all duration-300"
+            >
+              <a href=""
+                ><img class="xl:w-[70px]" src="Assets/Secciones/6.png" alt=""
+              /></a>
+            </div>
+            <!--Item 7-->
+            <div
+              class="max-w-[120px] max-h-[200px] mx-auto xl:hover:scale-150 hover:scale-125 transition-all duration-300"
+            >
+              <a href=""
+                ><img class="xl:w-[70px]" src="Assets/Secciones/7.png" alt=""
+              /></a>
+            </div>
+            <!--Item 8-->
+            <div
+              class="max-w-[120px] max-h-[200px] mx-auto xl:hover:scale-150 hover:scale-125 transition-all duration-300"
+            >
+              <a href=""
+                ><img class="xl:w-[70px]" src="Assets/Secciones/8.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Noticias----------------------------------------------------------------------------->
+      <section class="news mt-[80px] xl:mt-[150px] relative z-20 ">
+        <div class="container mx-auto">
+          <!--Text-->
+          <div class="max-w-[810px] mx-auto text-center mb-[52px]">
+            <h2 class="h2 mb-2">Noticias & Novedades</h2>
+            <p class="">
+              Mantengase informado con las noticias más recientes y relevantes
+              de la semana.
+            </p>
+          </div>
+          <!--Grid-->
+          <div class=" grid grid-cols-1 xl:grid-cols-3 gap-[27px]">
+            <!--Grid Item 1-->
+            <div
+              class="w-full max-w-[382px] h-[520px] border border-primary/20 rounded-[62px] p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer mx-auto "
+            >
+              <img class="mb-5" src="Assets/Img/noticia1.png" alt="" />
+              <div class="flex flex-col gap-[30px]">
+                <h3 class="h3">
+                  Trazabilidad individual para la cadena carnica.
+                </h3>
+                <div class="flex items-center justify-between">
+                  <p class="text-base">14 de Mayo,2024</p>
+                  <button
+                    class="bg-accent-secondary w-[52px] h-[52px] rounded-full group-hover:bg-white transition-all"
+                  >
+                    <i
+                      class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!--Grid Item 2-->
+            <div
+              class="news__item w-full max-w-[382px] h-[520px] border border-primary/20 rounded-[62px] p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer mx-auto "
+            >
+              <img class="mb-5" src="Assets/Img/noticia2.png" alt="" />
+              <div class="flex flex-col gap-[30px]">
+                <h3 class="h3">
+                  Pronóstico meteorológico por Leonardo De Benedictis
+                </h3>
+                <div class="flex items-center justify-between">
+                  <p class="text-base">15 de Mayo,2024</p>
+                  <button
+                    class="bg-accent-secondary w-[52px] h-[52px] rounded-full group-hover:bg-white transition-all"
+                  >
+                    <i
+                      class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!--Grid Item 3-->
+            <div
+              class="news__item w-full max-w-[382px] h-[520px] border border-primary/20 rounded-[62px] p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer mx-auto"
+            >
+              <img class="mb-5" src="Assets/Img/noticia3.png" alt="" />
+              <div class="flex flex-col gap-[30px]">
+                <h3 class="h3">Nuevos horarios de atención.</h3>
+                <div class="flex items-center justify-between">
+                  <p class="text-base">28 June,2024</p>
+                  <button
+                    class="bg-accent-secondary w-[52px] h-[52px] rounded-full group-hover:bg-white transition-all"
+                  >
+                    <i
+                      class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Sucursales-------------------------------------------------------------------------->
+      <section class="mt-[80px] xl:mt-[150px] relative z-20">
+        <!--Texto-->
+        <div class="container mx-auto">
+          <div class="flex justify-center">
+            <h2 class="h2">Sucursales</h2>
+          </div>
+          <p class="text-center mt-2">Ofrecemos nuestros servicios en distintos puntos.</p>
+
+
+          <div class="grid grid-cols-1 md:grid-cols-2 mt-4  pb-8">
+            <!--Sucursal 1-->
+            <div class="mt-4 ">
+              <h3 class="text-center text-[20px]">
+                <i class="ri-map-pin-line text-4xl mr-2 text-accent"></i>Casa
+                Central
+              </h3>
+              <p class="text-center text-[14px] text-gray-400">
+                Presidente Alvear y Pasteur - General San Martín - La Pampa
+              </p>
+            </div>
+            <!--Sucursal 2-->
+            <div class="mt-4">
+              <h3 class="text-center text-[20px]">
+                <i class="ri-map-pin-line text-4xl mr-2 text-accent"></i
+                >Sucursal V. Iris
+              </h3>
+              <p class="text-center text-[14px] text-gray-400">
+                9 de Julio 34 - Villa Iris - Buenos Aires
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--Mapa-->
+        <div class="mt-[40px]">
+          <iframe
+            src="https://www.google.com/maps/d/u/0/embed?mid=1rySm50yGN9RbJeXoPGSL4mAwCiuVqv0&ehbc=2E312F&noprof=1"
+            width="100%"
+            height="400"
+          ></iframe>
+        </div>
+      </section>
+
+      <!--Brands--------------------------------------------------------------------------->
+      <section class="brands mt-[80px] xl:mt-[150px] relative z-20">
+        <div class="container mx-auto">
+          <div
+            class="flex flex-col xl:flex-row justify-between items-center gap-12"
+          >
+            <img class="brands__img" src="Assets/Brands/1.png" alt="" />
+            <img class="brands__img" src="Assets/Brands/2.png" alt="" />
+            <img class="brands__img" src="Assets/Brands/3.png" alt="" />
+            <img class="brands__img" src="Assets/Brands/4.png" alt="" />
+            <img class="brands__img" src="Assets/Brands/5.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!--Contact-------------------------------------------------------------------------->
+      <section class="contact mt-[80px] xl:mt-[150px] bg-contact relative z-20">
+        <div
+          class="contact__container container mx-auto sm:rounded-[70px] py-[80px]"
+        >
+          <div class="contact__text max-w-[640px] mx-auto text-center">
+            <h2 class="h2 text-white mb-2">Contacto</h2>
+            <p class="text-white mb-4 max-w-sm xl:max-w-none mx-auto">
+              Contáctese con nosotros.
+            </p>
+            <button class="btn btn-accent mx-auto">
+              Contáctenos<i class="ri-arrow-right-line text-primary"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer--------------------------------------------------------------------------->
+    <footer class="footer mt-[80px] xl:mt-[150px] relative z-20">
+      <div class="container mx-auto px-0">
+        <div class="flex flex-col xl:flex-row xl:gap-[100px] xl:mb-[150px]">
+          <div
+            class="footer__item w-full max-w-[400px] mx-auto mb-8 text-center xl:text-left"
+          >
+            <!--Logo-->
+            <a class="flex justify-center xl:justify-start mb-2" href=""
+              ><img
+                class="w-40"
+                src="Assets/Logo/LogoRGB_FondoClaro.png"
+                alt=""
+            /></a>
+            <p class="mb-8 text-xl">
+              Sociedad Cooperativa Agrícola Ganadera Limitada.
+            </p>
+            <!--Socials-->
+            <ul
+              class="text-primary flex gap-[16px] justify-center xl:justify-start"
+            >
+              <li>
+                <a href=""><i class="ri-facebook-fill"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="ri-instagram-fill"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="flex-1 flex flex-col xl:flex-row text-center xl:text-left gap-12 xl:gap-[100px] xl:justify-end"
+          >
+            <div class="footer__item">
+              <h3 class="h3 mb-3">Páginas</h3>
+              <ul class="flex flex-col gap-4">
+                <li><a href="">La Cooperativa</a></li>
+                <li><a href="">Secciones</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Socios</a></li>
+              </ul>
+            </div>
+            <div class="footer__item">
+              <h3 class="h3 mb-3">Servicios</h3>
+              <ul class="flex flex-col gap-4">
+                <li><a href="">Hacienda</a></li>
+                <li><a href="">Combustibles</a></li>
+                <li><a href="">Cereales</a></li>
+                <li><a href="">Corralón</a></li>
+                <li><a href="">Supermercado</a></li>
+              </ul>
+            </div>
+            <div class="footer__item max-w-[260px] mx-auto xl:mx-0">
+              <h3 class="h3 mb-3">Contacto</h3>
+              <div class="flex flex-col gap-6 text-[16px]">
+                <p>
+                  Presidente Alvear y Pasteur. General San Martin, La Pampa,
+                  Argentina. CP (8206).
+                </p>
+                <p>contacto@soccoop.ar</p>
+                <p>(2925) 497 - 890</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Copyright-->
+      <p
+        class="footer__copyright text-center text-sm mt-10 py-5 bg-accent-secondary xl:border-t"
+      >
+        Copyright &copy; 2024. Todos los derechos reservados.
+      </p>
+    </footer>
+
+    <!--JAVASCRIPTS FILES------------------------------------------------------------------------------------------------>
+    <!--SWIPER JS-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--Main Js-->
+    <script src="js/main.js"></script>
+
+    <!--Weather js-->
+    <script
+      type="text/javascript"
+      src="https://www.tutiempo.net/s-widget/l_yetwLhthtWWB89jUVAujEy3fw6aUcYU"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.tutiempo.net/s-widget/l_FunwrBtxtMM9narKXfxzEymvAWnKB4K"
+    ></script>
+  </body>
+</html>

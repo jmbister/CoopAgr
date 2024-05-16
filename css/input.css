@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-primary text-secondary;
+}
+
+a {
+  @apply hover:text-accent transition-all duration-300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-primary text-primary;
+}
+
+.h1 {
+  @apply text-[48px] lg:text-[64px] leading-none;
+}
+
+.h2 {
+  @apply text-[36px] font-bold leading-none;
+}
+
+.h3 {
+  @apply text-[25px];
+}
+
+.h4 {
+  @apply text-[20px] font-semibold;
+}
+
+.btn {
+  @apply h-[36px] px-[24px] transition-all duration-300 text-white rounded-[32px] flex items-center gap-2;
+}
+
+.btn2 {
+  @apply h-[64px] px-[64px] transition-all duration-300 text-white rounded-[24px] flex items-center gap-2;
+}
+
+.btn-primary {
+  @apply bg-primary hover:bg-primary-hover;
+}
+
+.btn-accent {
+  @apply bg-accent hover:bg-accent-hover;
+}
+
+.nav-is-open {
+  @apply h-[350px] p-6;
+}
+
+.slider {
+  @apply w-[100%] h-[300px] relative;
+}
+
+.list {
+  @apply absolute top-0 left-0 h-[100%] flex w-max;
+}
+
+.buttons {
+  @apply absolute top-[45%] left-[5%] w-[90%] flex justify-between;
+}
+
+.dots {
+  @apply absolute bottom-3 flex justify-center left-[49%];
+}
+
+.dots li {
+  @apply w-2 h-2 bg-white rounded-lg;
+}
+
+li.active {
+  @apply bg-slate-700;
+}
