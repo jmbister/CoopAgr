@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["*.{html,js}"],
+  content: ["./**/*.{html,js}", "./pages/**/*.{html,js}"],
   theme: {
     container: {
       padding: {
@@ -20,7 +20,7 @@ module.exports = {
     backgroundImage: {
       hero: "url(/Assets/Img/bg-coop.jpg)",
       hero2: "url(/Assets/Img/bg-coop_movil.jpg)",
-      hacend1: "url(/Assets/Img/hacend.png)",
+      hacend: "url(/Assets/Img/hacend.png)",
       contact: "url(/Assets/Img/contacto.jpg)",
     },
     extend: {

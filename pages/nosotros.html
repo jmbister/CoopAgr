@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soc. Coop. Agr. Gan. Ltda.</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../dist/output.css" />
+    <!--ICONS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--SWIPER CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!--Header-------------------------------------------------------------------------->
+    <header class="absolute top-0 left-0 w-full h-[90px] z-30 bg-transparent">
+      <div class="container mx-auto flex justify-between h-full items-center">
+        <!--Logo-->
+        <a href="../index.html">
+          <img
+            class="w-52"
+            src="../Assets/Logo/LogoRGB_FondoOscuro.png"
+            alt="Logo"
+          />
+        </a>
+        <!--Nav----------------------------------------->
+        <nav>
+          <!--Nav mobile menu Hamburger-->
+          <div class="cursor-pointer lg:hidden" id="nav_trigger_btn">
+            <i class="ri-menu-4-line text-4xl text-white"></i>
+          </div>
+          <ul
+            class="fixed w-full h-0 p-0 bg-white lg:bg-transparent overflow-hidden top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
+            id="nav_menu"
+          >
+            <li class="mx-auto my-auto lg:text-white">
+              <a
+                class="hover:text-accent transition-all duration-300"
+                href="../index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="mx-auto my-auto lg:text-white">
+              <a class="hover:text-accent transition-all duration-300" href="#"
+                >La Cooperativa</a
+              >
+            </li>
+            <li class="mx-auto my-auto lg:text-white">
+              <a
+                class="hover:text-accent transition-all duration-300"
+                href="secciones.html"
+                >Secciones</a
+              >
+            </li>
+            <li class="mx-auto my-auto lg:text-white">
+              <a class="hover:text-accent transition-all duration-300" href="#"
+                >Contacto</a
+              >
+            </li>
+            <li class="mx-auto">
+              <a
+                href="https://consultas.soccoop.ar/"
+                target="_blank"
+                class="btn btn-primary xl:mx-0"
+              >
+                Socios
+                <i class="ri-user-line text-white"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--Container---------------------------------------------------------------------------->
+    <main class="max-w-[1920px] mx-auto overflow-hidden">
+      <!--Hero------------------------------------------------------------------------------->
+      <section class="hero h-[650px] lg:h-[765px] relative z-20">
+        <!-- Video Background -->
+        <video
+          class="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
+          autoplay
+          loop
+          muted
+          playsinline
+        >
+          <source src="../Assets/Video/bgNosotros.mp4" type="video/mp4" />
+        </video>
+        <!-- Content -->
+        <div class="container mx-auto flex items-center justify-center">
+          <!--Text-->
+          <div class="mt-[300px] lg:mt-[400px] flex flex-col text-center">
+            <h1 class="h1 mb-8 text-white font-black">
+              Sobre Nosotros. <br />Conózcanos.
+            </h1>
+            <p class="mb-8 text-xl text-white">
+              Fundada el 30 de Octubre de 1943.<br />Brindamos soluciones a
+              nuestros asociados desde distintas áreas de negocios.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--Features--------------------------------------------------------------------------->
+      <section class="bg-gray-100 py-[80px] max-w-[1920px]">
+        <div class="container mx-auto">
+          <!--Grid Layout-->
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-x-28 gap-y-20">
+            <!--Grid Item 1-->
+            <div class="justify-center mx-auto">
+              <h4 class="text-primary text-[64px] font-black text-center -mb-4">
+                8
+              </h4>
+              <p class="text-[18px] text-center leading-6 text-gray-500">
+                Secciones<br />de Negocio
+              </p>
+            </div>
+            <!--Grid Item 2-->
+            <div class="justify-center mx-auto">
+              <h4 class="text-primary text-[64px] font-black text-center -mb-4">
+                282
+              </h4>
+              <p class="text-[18px] text-center leading-6 text-gray-500">
+                Socios<br />Activos
+              </p>
+            </div>
+            <!--Grid Item 3-->
+            <div class="justify-center mx-auto">
+              <h4 class="text-primary text-[64px] font-black text-center -mb-4">
+                28
+              </h4>
+              <p class="text-[18px] text-center leading-6 text-gray-500">
+                Empleos<br />Directos
+              </p>
+            </div>
+            <!--Grid Item 4-->
+            <div class="justify-center mx-auto">
+              <h4 class="text-primary text-[64px] font-black text-center -mb-4">
+                +10
+              </h4>
+              <p class="text-[18px] text-center leading-6 text-gray-500">
+                Empleos<br />Indirectos
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Sobre Nosotros--------------------------------------------------------------------->
+      <section class="mt-[80px]">
+        <!--Background1-->
+        <img class="hidden sm:block" src="../Assets/Img/bg_about1.jpg" alt="" />
+        <img class="sm:hidden" src="../Assets/Img/bg_about_movil.png" alt="" />
+
+        <!--Historia-->
+        <div class="mt-[80px] h-12 bg-gray-100 relative z-10"></div>
+        <div class="container mx-auto relative z-10 -mt-10">
+          <h2 class="h2 text-primary absolute z-20">Nuestra Historia</h2>
+        </div>
+        <p
+          class="container relative mx-auto mt-14 text-[16px] text-gray-800 text-pretty"
+        >
+          Transcurría el año 1943. Pese a las dificultades que planteaba el
+          medio, un grupo de jóvenes agricultores tomó la iniciativa de gestar
+          una Sociedad que les permitiera defender su producción y sortear,
+          entre todos, los inconvenientes comunes al hombre de campo. La idea
+          germinó un 3 de octubre de 1943 y la fundación se concretó en la
+          Asamblea convocada el día 30 de octubre de 1943 a las 16 horas en
+          Villa Alba.<br /><br />Nuestra institución nació de la imperiosa
+          necesidad del productor agropecuario local que, haciéndose eco del
+          estado económico-financiero de la zona, quería defender el justo
+          precio de su producción, tratando de comercializarla en forma mas
+          directa, y al mismo tiempo, proveerse de mercaderías y elementos para
+          su consumo y explotación.
+        </p>
+        <!--Background2-->
+        <img
+          class="hidden md:block mt-8"
+          src="../Assets/Img/bg_about2.png"
+          alt=""
+        />
+        <img
+          class="md:hidden mt-8"
+          src="../Assets/Img/bg_about2_movil.png"
+          alt=""
+        />
+      </section>
+
+      <!--MisionVision-->
+      <section class="container mx-auto mt-[20px]">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!--GridItem-->
+          <div class="bg-transparent p-8 rounded-xl shadow-blue-100 shadow-md">
+            <h2 class="h2 text-primary">Misión</h2>
+            <p class="mt-4 text-[16px] text-gray-800 font-medium text-pretty">
+              Contribuir al bienestar general de la región, defendiendo el justo
+              valor de la producción agropecuaria, promoviendo prácticas
+              sostenibles y participando activamente en iniciativas comunitarias
+              que fortalezcan los lazos entre nuestros productores y
+              consumidores.
+            </p>
+          </div>
+          <!--GridItem-->
+          <div class="bg-primary p-8 rounded-xl shadow-blue-200 shadow-md">
+            <h2 class="h2 text-white">Visión</h2>
+            <p class="mt-4 text-[16px] text-white text-pretty">
+              Forjar un futuro donde nuestra Cooperativa Agrícola Ganadera sea
+              un referente nacional en prácticas agrícolas y ganaderas
+              sostenibles, destacando por la calidad excepcional de nuestros
+              productos y el compromiso inquebrantable con la equidad y la
+              transparencia.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--Consejo de Amdinistración-------------------------------------------------------->
+      <section class="container mx-auto lg:mt-[120px] mt-[60px]">
+        <h2 class="h2 text-primary text-center sm:text-left text-balance">
+          Consejo de Administración Actual
+        </h2>
+        <!--Grid Layout-->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-[40px]">
+          <!--Grid Item 1-->
+          <div class="bg-gray-100 p-4 text-center lg:text-left">
+            <h3 class="text-[20px] text-primary font-semibold">Presidente</h3>
+            <h3
+              class="text-[14px] sm:text-[18px] text-gray-400 font-semibold sm:-mt-2 tracking-wide"
+            >
+              RODRIGO DARIO GAVIOT
+            </h3>
+          </div>
+          <!--Grid Item 2-->
+          <div class="hidden lg:block"></div>
+          <!--Grid Item 3-->
+          <div class="hidden lg:block"></div>
+          <!--Grid Item 4-->
+          <div class="bg-gray-100 p-4 text-center lg:text-left">
+            <h3 class="text-[20px] text-primary font-semibold">
+              Vice-Presidente
+            </h3>
+            <h3
+              class="text-[14px] sm:text-[18px] text-gray-400 font-semibold sm:-mt-2 tracking-wide"
+            >
+              HENRY EXSEL MENENDEZ
+            </h3>
+          </div>
+          <!--Grid Item 5-->
+          <div class="bg-gray-100 p-4 text-center lg:text-left">
+            <h3 class="text-[20px] text-primary font-semibold">Secretario</h3>
+            <h3
+              class="text-[14px] sm:text-[18px] text-gray-400 font-semibold sm:-mt-2 tracking-wide"
+            >
+              DANTE RUBEN GRAND
+            </h3>
+          </div>
+          <!--Grid Item 6-->
+          <div class="bg-gray-100 p-4 text-center lg:text-left">
+            <h3 class="text-[20px] text-primary font-semibold">Tesorero</h3>
+            <h3
+              class="text-[14px] sm:text-[18px] text-gray-400 font-semibold sm:-mt-2 tracking-wide"
+            >
+              ANTONIO DANIEL MALDONADO
+            </h3>
+          </div>
+          <!--Grid Item 7-->
+          <div class="bg-gray-100 p-4 text-center lg:text-left">
+            <h3 class="text-[20px] text-primary font-semibold">
+              Vocales Titulares
+            </h3>
+            <h3
+              class="text-[14px] sm:text-[18px] text-gray-400 font-semibold sm:-mt-2 tracking-wide"
+            >
+              ALDO HECTOR NEGRIN
+            </h3>
+            <h3
+              class="text-[14px] sm:text-[18px] text-gray-400 font-semibold sm:-mt-2 tracking-wide"
+            >
+              DIEGO MARTIN FEUERSCHVENGER
+            </h3>
+          </div>
+          <!--Grid Item 8-->
+          <div class="bg-gray-100 p-4 text-center lg:text-left">
+            <h3 class="text-[20px] text-primary font-semibold">
+              Vocales Suplentes
+            </h3>
+            <h3
+              class="text-[14px] sm:text-[18px] text-gray-400 font-semibold sm:-mt-2 tracking-wide"
+            >
+              HUGO ROBERTO SCHLAPS
+            </h3>
+            <h3
+              class="text-[14px] sm:text-[18px] text-gray-400 font-semibold sm:-mt-2 tracking-wide"
+            >
+              EDUARDO RAUL MENENDEZ
+            </h3>
+          </div>
+          <!--Grid Item 9-->
+          <div class="hidden lg:block"></div>
+          <!--Grid Item 10-->
+          <div class="bg-gray-100 p-4 text-center lg:text-left">
+            <h3 class="text-[20px] text-primary font-semibold">
+              Síndico Titular
+            </h3>
+            <h3
+              class="text-[14px] sm:text-[18px] text-gray-400 font-semibold sm:-mt-2 tracking-wide"
+            >
+              OMAR ENRIQUE GAVIOT
+            </h3>
+          </div>
+          <!--Grid Item 11-->
+          <div class="bg-gray-100 p-4 text-center lg:text-left">
+            <h3 class="text-[20px] text-primary font-semibold">
+              Síndico Suplente
+            </h3>
+            <h3
+              class="text-[14px] sm:text-[18px] text-gray-400 font-semibold sm:-mt-2 tracking-wide"
+            >
+              NESTOR FABIAN RIHL
+            </h3>
+          </div>
+          <!--Grid Item 12-->
+          <div class="hidden lg:block"></div>
+        </div>
+      </section>
+
+      <!--Contacto-------------------------------------------------------------------------->
+      <section class="contact mt-[80px] xl:mt-[150px] bg-contact relative z-20">
+        <div class="container mx-auto sm:rounded-[70px] py-[80px]">
+          <div class="max-w-[640px] mx-auto text-center">
+            <h2 class="h2 text-white mb-2">Contacto</h2>
+            <p class="text-white mb-4 max-w-sm xl:max-w-none mx-auto">
+              Contáctese con nosotros.
+            </p>
+            <a
+              href="contacto.html"
+              class="bg-accent py-2 px-8 rounded-lg font-medium text-white hover:shadow-md transition-all duration-200"
+            >
+              Ir a contacto<i class="ri-arrow-right-line text-white"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer--------------------------------------------------------------------------->
+    <footer class="footer relative z-20 bg-primary pt-[80px]">
+      <div class="container mx-auto px-0 text-white">
+        <div class="flex flex-col xl:flex-row xl:gap-[100px] xl:mb-[150px]">
+          <div
+            class="w-full max-w-[400px] mx-auto mb-8 text-center xl:text-left"
+          >
+            <!--Logo-->
+            <a class="flex justify-center xl:justify-start mb-2" href=""
+              ><img
+                class="w-40"
+                src="../Assets/Logo/LogoRGB_FondoOscuro.png"
+                alt=""
+            /></a>
+            <p class="mb-8 text-xl text-balance">
+              Sociedad Cooperativa Agrícola Ganadera Limitada.
+            </p>
+            <!--Socials-->
+            <ul
+              class="text-primary flex gap-[16px] justify-center xl:justify-start"
+            >
+              <li>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100075978953844"
+                  target="_blank"
+                  ><i class="ri-facebook-fill text-white"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/coopeagricolagsm?igsh=MXFmcHhxcnRhdmFxdg=="
+                  target="_blank"
+                  ><i class="ri-instagram-fill text-white"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="flex-1 flex flex-col xl:flex-row text-center xl:text-left gap-12 xl:gap-[100px] xl:justify-end"
+          >
+            <div class="">
+              <h3 class="h3 mb-3">Páginas</h3>
+              <ul class="flex flex-col gap-4">
+                <li><a href="nosotros.html">La Cooperativa</a></li>
+                <li><a href="secciones.html">Secciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li>
+                  <a href="https://consultas.soccoop.ar/" target="_blank"
+                    >Socios</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="">
+              <h3 class="h3 mb-3">Servicios</h3>
+              <ul class="flex flex-col gap-4">
+                <li><a href="hacienda.html">Hacienda</a></li>
+                <li><a href="combustibles.html">Combustibles</a></li>
+                <li><a href="cereales.html">Cereales</a></li>
+                <li><a href="ferreteria.html">Ferretería</a></li>
+                <li><a href="supermercado.html">Supermercado</a></li>
+              </ul>
+            </div>
+            <div class="max-w-[260px] mx-auto xl:mx-0">
+              <h3 class="h3 mb-3">Contacto</h3>
+              <div class="flex flex-col gap-6 text-[16px]">
+                <p>
+                  Presidente Alvear y Pasteur. General San Martin, La Pampa,
+                  Argentina. CP (8206).
+                </p>
+                <p>contacto@soccoop.ar</p>
+                <p>(02925) - 497249 / 636</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Copyright-->
+      <p
+        class="text-center text-[12px] font-thin mt-10 py-5 bg-primary text-white"
+      >
+        Copyright &copy; 2024. Todos los derechos reservados.
+      </p>
+    </footer>
+
+    <!--JAVASCRIPTS FILES------------------------------------------------------------------------------------------------>
+    <!--SWIPER JS-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--Main Js-->
+    <script src="../js/main.js"></script>
+  </body>
+</html>

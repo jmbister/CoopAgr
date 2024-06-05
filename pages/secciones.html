@@ -1,12 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Soc. Coop. Agr. Gan. Ltda.</title>
     <!--CSS-->
     <link rel="stylesheet" href="../dist/output.css" />
-
+    <!--ICONS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <!--SWIPER CSS-->
     <link
       rel="stylesheet"
@@ -15,13 +26,13 @@
   </head>
   <body>
     <!--Header-------------------------------------------------------------------------->
-    <header class="sticky top-0 h-[90px] shadow-md z-30 bg-white">
+    <header class="absolute top-0 left-0 w-full h-[90px] z-30 bg-transparent">
       <div class="container mx-auto flex justify-between h-full items-center">
         <!--Logo-->
         <a href="">
           <img
             class="w-52"
-            src="../Assets/Logo/LogoRGB_FondoClaro.png"
+            src="../Assets/Logo/LogoRGB_FondoOscuro.png"
             alt="Logo"
           />
         </a>
@@ -29,72 +40,354 @@
         <nav>
           <!--Nav mobile menu Hamburger-->
           <div class="cursor-pointer lg:hidden" id="nav_trigger_btn">
-            <i class="ri-menu-4-line text-4xl text-primary"></i>
+            <i class="ri-menu-4-line text-4xl text-white"></i>
           </div>
           <ul
-            class="fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
+            class="fixed w-full h-0 p-0 bg-white lg:bg-transparent overflow-hidden top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
             id="nav_menu"
           >
-            <li class="mx-auto my-auto"><a href="../index.html">Inicio</a></li>
-            <li class="mx-auto my-auto"><a href="#">La Cooperativa</a></li>
-            <li class="mx-auto my-auto">
-              <a href="pages/secciones.html">Secciones</a>
+            <li class="mx-auto my-auto lg:text-white">
+              <a
+                class="hover:text-accent transition-all duration-300"
+                href="../index.html"
+                >Inicio</a
+              >
             </li>
-            <li class="mx-auto my-auto"><a href="#">Contacto</a></li>
+            <li class="mx-auto my-auto lg:text-white">
+              <a
+                class="hover:text-accent transition-all duration-300"
+                href="nosotros.html"
+                >La Cooperativa</a
+              >
+            </li>
+            <li class="mx-auto my-auto lg:text-white">
+              <a
+                class="hover:text-accent transition-all duration-300"
+                href="secciones.html"
+                >Secciones</a
+              >
+            </li>
+            <li class="mx-auto my-auto lg:text-white">
+              <a
+                class="hover:text-accent transition-all duration-300"
+                href="contacto.html"
+                >Contacto</a
+              >
+            </li>
             <li class="mx-auto">
-              <button class="btn btn-primary xl:mx-0">
+              <a
+                href="https://consultas.soccoop.ar/"
+                target="_blank"
+                class="btn btn-primary xl:mx-0"
+              >
                 Socios
-                <i class="ri-user-line text-accent"></i>
-              </button>
+                <i class="ri-user-line text-white"></i>
+              </a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <!--Banners---------------------------------------------------------------------------->
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <img
-            src="https://http2.mlstatic.com/D_NQ_600952-MLA75911650340_042024-OO.webp"
-            alt=""
-          />
+    <!--Container---------------------------------------------------------------------------->
+    <main class="max-w-[1920px] mx-auto overflow-hidden">
+      <!--Hero------------------------------------------------------------------------------->
+      <section class="hero h-[650px] lg:h-[765px] relative z-20">
+        <!-- Video Background -->
+        <video
+          class="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
+          autoplay
+          loop
+          muted
+          playsinline
+        >
+          <source src="../Assets/Video/bgSecciones.mp4" type="video/mp4" />
+        </video>
+        <!-- Content -->
+        <div class="container mx-auto flex items-center justify-center">
+          <!--Text-->
+          <div class="mt-[300px] lg:mt-[400px] flex flex-col text-center">
+            <h1 class="h1 mb-4 text-white font-black">Secciones</h1>
+            <p class="mb-8 text-xl text-white">Tenemos mucho para ofrecerle.</p>
+          </div>
         </div>
-        <div class="swiper-slide">
-          <img
-            src="https://http2.mlstatic.com/D_NQ_800318-MLA75914339996_042024-OO.webp"
-            alt=""
-          />
+      </section>
+
+      <!--Secciones--------------------------------------------------------------------------->
+      <section class="container mx-auto mt-[80px] md:mt-[100px]">
+        <h2 class="h2 text-center">Conozca nuestras secciones de negocio</h2>
+        <!--Grid Layout-->
+        <div
+          class="grid grid-cols-2 gap-8 mt-[40px] md:grid-cols-4 md:mt-[60px]"
+        >
+          <!--Grid Item 1-->
+          <div class="mx-auto lg:hover:scale-125 transition-all duration-300">
+            <a href="supermercado.html"
+              ><img class="w-[130px]" src="../Assets/Secciones/1.png" alt=""
+            /></a>
+          </div>
+          <!--Grid Item 2-->
+          <div class="mx-auto lg:hover:scale-125 transition-all duration-300">
+            <a href="combustibles.html"
+              ><img class="w-[120px]" src="../Assets/Secciones/2.png" alt=""
+            /></a>
+          </div>
+          <!--Grid Item 3-->
+          <div class="mx-auto lg:hover:scale-125 transition-all duration-300">
+            <a href="seguros.html"
+              ><img class="w-[120px]" src="../Assets/Secciones/3.png" alt=""
+            /></a>
+          </div>
+          <!--Grid Item 4-->
+          <div class="mx-auto lg:hover:scale-125 transition-all duration-300">
+            <a href="cereales.html"
+              ><img class="w-[120px]" src="../Assets/Secciones/4.png" alt=""
+            /></a>
+          </div>
+          <!--Grid Item 5-->
+          <div class="mx-auto lg:hover:scale-125 transition-all duration-300">
+            <a href="ferreteria.html"
+              ><img class="w-[120px]" src="../Assets/Secciones/5.png" alt=""
+            /></a>
+          </div>
+          <!--Grid Item 6-->
+          <div class="mx-auto lg:hover:scale-125 transition-all duration-300">
+            <a href="ferreteria.html"
+              ><img class="w-[120px]" src="../Assets/Secciones/6.png" alt=""
+            /></a>
+          </div>
+          <!--Grid Item 7-->
+          <div class="mx-auto lg:hover:scale-125 transition-all duration-300">
+            <a href="hacienda.html"
+              ><img class="w-[120px]" src="../Assets/Secciones/7.png" alt=""
+            /></a>
+          </div>
+          <!--Grid Item 8-->
+          <div class="mx-auto lg:hover:scale-125 transition-all duration-300">
+            <a href="veterinaria.html"
+              ><img class="w-[120px]" src="../Assets/Secciones/8.png" alt=""
+            /></a>
+          </div>
         </div>
-        <div class="swiper-slide">
-          <img
-            src="https://http2.mlstatic.com/D_NQ_809514-MLA75934479830_042024-OO.webp"
-            alt=""
-          />
+      </section>
+
+      <!--Datos Contacto-->
+      <section class="container mx-auto mt-[80px] xl:mt-[100px]">
+        <h2 class="h2 text-center">Datos de contacto</h2>
+        <!--Grid Layout-->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-[40px]">
+          <!--Grid Item 1-->
+          <div class="bg-gray-100 p-4 text-center lg:text-left">
+            <h3 class="text-[20px] text-primary font-semibold">Gerencia</h3>
+            <h3 class="text-[20px] text-gray-400 font-semibold -mt-2">
+              Nestor Bisterfeld
+            </h3>
+            <p class="mt-2">+54 9 (291) 425 0900</p>
+            <p class="-mt-1">gerencia@socoop.ar</p>
+          </div>
+          <!--Grid Item 2-->
+          <div class="bg-gray-100 p-4 text-center lg:text-left">
+            <h3 class="text-[20px] text-primary font-semibold">
+              Administración
+            </h3>
+            <h3 class="text-[20px] text-gray-400 font-semibold -mt-2">
+              Maximiliano Cuesta
+            </h3>
+            <p class="mt-2">+54 9 (291) 406 1411</p>
+            <p class="-mt-1">administración@socoop.ar</p>
+          </div>
+          <!--Grid Item 3-->
+          <div class="hidden lg:block"></div>
+          <!--Grid Item 4-->
+          <div class="bg-gray-100 p-4 text-center lg:text-left">
+            <h3 class="text-[20px] text-primary font-semibold">
+              Recursos Humanos
+            </h3>
+            <h3 class="text-[20px] text-gray-400 font-semibold -mt-2">
+              Ariel Forneron
+            </h3>
+            <p class="mt-2">+54 9 (297) 506 0516</p>
+            <p class="-mt-1">rrhh@socoop.ar</p>
+          </div>
+          <!--Grid Item 5-->
+          <div class="hidden lg:block"></div>
+          <!--Grid Item 6-->
+          <div class="hidden lg:block"></div>
+          <!--Grid Item 7-->
+          <div class="bg-gray-100 p-4 text-center lg:text-left">
+            <h3 class="text-[20px] text-primary font-semibold">Veterinaria</h3>
+            <h3 class="text-[20px] text-gray-400 font-semibold -mt-2">
+              Fabio Schlaps
+            </h3>
+            <p class="mt-2">+54 9 (291) xxx xxxx</p>
+            <p class="-mt-1">veterinaria@socoop.ar</p>
+          </div>
+          <!--Grid Item 8-->
+          <div class="bg-gray-100 p-4 text-center lg:text-left">
+            <h3 class="text-[20px] text-primary font-semibold">Supermercado</h3>
+            <h3 class="text-[20px] text-gray-400 font-semibold -mt-2">
+              Juan Hiller
+            </h3>
+            <p class="mt-2">+54 9 (291) 431 2088</p>
+            <p class="-mt-1">supermercado@socoop.ar</p>
+          </div>
+          <!--Grid Item 9-->
+          <div class="bg-gray-100 p-4 text-center lg:text-left">
+            <h3 class="text-[20px] text-primary font-semibold">Seguros</h3>
+            <h3 class="text-[20px] text-gray-400 font-semibold -mt-2">
+              Kevin Pitta
+            </h3>
+            <p class="mt-2">+54 9 (291) 643 5841</p>
+            <p class="-mt-1">seguros@socoop.ar</p>
+          </div>
+          <!--Grid Item 10-->
+          <div class="bg-gray-100 p-4 text-center lg:text-left">
+            <h3 class="text-[20px] text-primary font-semibold">Hacienda</h3>
+            <h3 class="text-[20px] text-gray-400 font-semibold -mt-2">
+              Claudio Gentili
+            </h3>
+            <p class="mt-2">+54 9 (291) 644 1637</p>
+            <p class="-mt-1">hacienda@socoop.ar</p>
+          </div>
+          <!--Grid Item 11-->
+          <div class="bg-gray-100 p-4 text-center lg:text-left">
+            <h3 class="text-[20px] text-primary font-semibold">
+              Ferretería y Corralón
+            </h3>
+            <h3 class="text-[20px] text-gray-400 font-semibold -mt-2">
+              Alan López
+            </h3>
+            <p class="mt-2">+54 9 (291) 406 1374</p>
+            <p class="-mt-1">ferreteria@socoop.ar</p>
+          </div>
+          <!--Grid Item 12-->
+          <div class="bg-gray-100 p-4 text-center lg:text-left">
+            <h3 class="text-[20px] text-primary font-semibold">Cereales</h3>
+            <h3 class="text-[20px] text-gray-400 font-semibold -mt-2">
+              Mariano Gaviot
+            </h3>
+            <p class="mt-2">+54 9 (291) 643 6995</p>
+            <p class="-mt-1">cereales@socoop.ar</p>
+          </div>
+          <!--Grid Item 13-->
+          <div class="bg-gray-100 p-4 text-center lg:text-left">
+            <h3 class="text-[20px] text-primary font-semibold">
+              Estación de Servicios
+            </h3>
+            <h3 class="text-[20px] text-gray-400 font-semibold -mt-2">
+              Cristian Prost
+            </h3>
+            <p class="mt-2">+54 9 (291) 437 4007</p>
+            <p class="-mt-1">combustibles@socoop.ar</p>
+          </div>
         </div>
-        <div class="swiper-slide">
-          <img
-            src="https://http2.mlstatic.com/D_NQ_926790-MLA76111412855_042024-OO.webp"
-            alt=""
-          />
+      </section>
+
+      <!--Contacto-------------------------------------------------------------------------->
+      <section class="contact mt-[80px] xl:mt-[150px] bg-contact relative z-20">
+        <div class="container mx-auto sm:rounded-[70px] py-[80px]">
+          <div class="max-w-[640px] mx-auto text-center">
+            <h2 class="h2 text-white mb-2">Contacto</h2>
+            <p class="text-white mb-4 max-w-sm xl:max-w-none mx-auto">
+              Contáctese con nosotros.
+            </p>
+            <a
+              href="contacto.html"
+              class="bg-accent py-2 px-8 rounded-lg font-medium text-white hover:shadow-md transition-all duration-200"
+            >
+              Ir a contacto<i class="ri-arrow-right-line text-white"></i>
+            </a>
+          </div>
         </div>
-        <div class="swiper-slide">
-          <img
-            src="https://http2.mlstatic.com/D_NQ_641484-MLA76089626995_042024-OO.webp"
-            alt=""
-          />
+      </section>
+    </main>
+
+    <!--Footer--------------------------------------------------------------------------->
+    <footer class="footer relative z-20 bg-primary pt-[80px]">
+      <div class="container mx-auto px-0 text-white">
+        <div class="flex flex-col xl:flex-row xl:gap-[100px] xl:mb-[150px]">
+          <div
+            class="w-full max-w-[400px] mx-auto mb-8 text-center xl:text-left"
+          >
+            <!--Logo-->
+            <a class="flex justify-center xl:justify-start mb-2" href=""
+              ><img
+                class="w-40"
+                src="../Assets/Logo/LogoRGB_FondoOscuro.png"
+                alt=""
+            /></a>
+            <p class="mb-8 text-xl text-balance">
+              Sociedad Cooperativa Agrícola Ganadera Limitada.
+            </p>
+            <!--Socials-->
+            <ul
+              class="text-primary flex gap-[16px] justify-center xl:justify-start"
+            >
+              <li>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100075978953844"
+                  target="_blank"
+                  ><i class="ri-facebook-fill text-white"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/coopeagricolagsm?igsh=MXFmcHhxcnRhdmFxdg=="
+                  target="_blank"
+                  ><i class="ri-instagram-fill text-white"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="flex-1 flex flex-col xl:flex-row text-center xl:text-left gap-12 xl:gap-[100px] xl:justify-end"
+          >
+            <div class="">
+              <h3 class="h3 mb-3">Páginas</h3>
+              <ul class="flex flex-col gap-4">
+                <li><a href="nosotros.html">La Cooperativa</a></li>
+                <li><a href="secciones.html">Secciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li>
+                  <a href="https://consultas.soccoop.ar/" target="_blank"
+                    >Socios</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="">
+              <h3 class="h3 mb-3">Servicios</h3>
+              <ul class="flex flex-col gap-4">
+                <li><a href="hacienda.html">Hacienda</a></li>
+                <li><a href="combustibles.html">Combustibles</a></li>
+                <li><a href="cereales.html">Cereales</a></li>
+                <li><a href="ferreteria.html">Ferretería</a></li>
+                <li><a href="supermercado.html">Supermercado</a></li>
+              </ul>
+            </div>
+            <div class="max-w-[260px] mx-auto xl:mx-0">
+              <h3 class="h3 mb-3">Contacto</h3>
+              <div class="flex flex-col gap-6 text-[16px]">
+                <p>
+                  Presidente Alvear y Pasteur. General San Martin, La Pampa,
+                  Argentina. CP (8206).
+                </p>
+                <p>contacto@soccoop.ar</p>
+                <p>(02925) - 497249 / 636</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
+      <!--Copyright-->
+      <p
+        class="text-center text-[12px] font-thin mt-10 py-5 bg-primary text-white"
+      >
+        Copyright &copy; 2024. Todos los derechos reservados.
+      </p>
+    </footer>
 
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div>
+    <!--JAVASCRIPTS FILES------------------------------------------------------------------------------------------------>
     <!--SWIPER JS-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!--Main Js-->

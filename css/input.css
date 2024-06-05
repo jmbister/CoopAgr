@@ -3,11 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply font-primary text-secondary;
-}
-
-a {
-  @apply hover:text-accent transition-all duration-300;
+  @apply font-primary;
 }
 
 h1,
@@ -16,15 +12,15 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-primary text-primary;
+  @apply font-primary;
 }
 
 .h1 {
-  @apply text-[48px] lg:text-[64px] leading-none;
+  @apply text-[40px] lg:text-[64px] leading-none;
 }
 
 .h2 {
-  @apply text-[36px] font-bold leading-none;
+  @apply text-[32px] font-bold leading-none;
 }
 
 .h3 {
@@ -32,19 +28,19 @@ h6 {
 }
 
 .h4 {
-  @apply text-[20px] font-semibold;
+  @apply font-semibold;
 }
 
 .btn {
-  @apply h-[36px] px-[24px] transition-all duration-300 text-white rounded-[32px] flex items-center gap-2;
+  @apply py-[8px] px-[16px] transition-all duration-300 text-white rounded-[16px] flex items-center gap-2;
 }
 
 .btn2 {
-  @apply h-[64px] px-[64px] transition-all duration-300 text-white rounded-[24px] flex items-center gap-2;
+  @apply py-[8px] px-[32px] transition-all duration-300 text-white rounded-[16px] flex items-center gap-2;
 }
 
 .btn-primary {
-  @apply bg-primary hover:bg-primary-hover;
+  @apply bg-accent hover:bg-blue-950 transition-all duration-200;
 }
 
 .btn-accent {

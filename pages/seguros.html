@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soc. Coop. Agr. Gan. Ltda.</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../dist/output.css" />
+    <!--ICONS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--SWIPER CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!--Header-------------------------------------------------------------------------->
+    <header class="absolute top-0 left-0 w-full h-[90px] z-30 bg-transparent">
+      <div class="container mx-auto flex justify-between h-full items-center">
+        <!--Logo-->
+        <a href="../index.html">
+          <img
+            class="w-52"
+            src="../Assets/Logo/LogoRGB_FondoOscuro.png"
+            alt="Logo"
+          />
+        </a>
+        <!--Nav----------------------------------------->
+        <nav>
+          <!--Nav mobile menu Hamburger-->
+          <div class="cursor-pointer lg:hidden" id="nav_trigger_btn">
+            <i class="ri-menu-4-line text-4xl text-white"></i>
+          </div>
+          <ul
+            class="fixed w-full h-0 p-0 bg-white lg:bg-transparent overflow-hidden top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
+            id="nav_menu"
+          >
+            <li class="mx-auto my-auto lg:text-white">
+              <a
+                class="hover:text-accent transition-all duration-300"
+                href="../index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="mx-auto my-auto lg:text-white">
+              <a
+                class="hover:text-accent transition-all duration-300"
+                href="nosotros.html"
+                >La Cooperativa</a
+              >
+            </li>
+            <li class="mx-auto my-auto lg:text-white">
+              <a
+                class="hover:text-accent transition-all duration-300"
+                href="secciones.html"
+                >Secciones</a
+              >
+            </li>
+            <li class="mx-auto my-auto lg:text-white">
+              <a
+                class="hover:text-accent transition-all duration-300"
+                href="contacto.html"
+                >Contacto</a
+              >
+            </li>
+            <li class="mx-auto">
+              <a
+                href="https://consultas.soccoop.ar/"
+                target="_blank"
+                class="btn btn-primary xl:mx-0"
+              >
+                Socios
+                <i class="ri-user-line text-accent"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--Container---------------------------------------------------------------------------->
+    <main class="max-w-[1920px] mx-auto overflow-hidden">
+      <!--Hero------------------------------------------------------------------------------->
+      <section class="hero h-[650px] lg:h-[565px] relative z-20">
+        <!-- Background -->
+        <img
+          class="hidden sm:block absolute top-0 left-0 w-full h-full object-cover z-[-1] brightness-50"
+          src="../Assets/Img/24.jpg"
+          alt="fondo seguros"
+        />
+        <img
+          class="sm:hidden absolute top-0 left-0 w-full h-full object-cover z-[-1] brightness-50"
+          src="../Assets/Img/24_movil.jpg"
+          alt="fondo seguros"
+        />
+        <!-- Content -->
+        <div class="container mx-auto flex items-center justify-center">
+          <!--Text-->
+          <div class="mt-[300px] lg:mt-[400px] flex flex-col text-center">
+            <h1 class="h1 mb-4 text-white font-black">
+              Seguros y Medicina Prepaga
+            </h1>
+            <p class="mb-8 text-xl text-white text-balance">
+              Cuidamos de usted y de sus bienes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--Datos Contacto--------------------------------------------------------------------->
+      <section class="container mx-auto mt-[40px] xl:mt-[60px]">
+        <!--Grid Layout-->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+          <!--Grid Item 1-->
+          <div class="p-4 text-center lg:text-left">
+            <h3 class="text-[22px] text-primary font-semibold">
+              Información de contacto
+            </h3>
+          </div>
+          <!--Grid Item 2-->
+          <div class="hidden lg:block"></div>
+          <!--Grid Item 3-->
+          <div class="bg-gray-100 p-4 text-center lg:text-left">
+            <h3 class="text-[20px] text-primary font-semibold">
+              Encargado Seguros
+            </h3>
+            <h3 class="text-[20px] text-gray-400 font-semibold -mt-2">
+              Kevin Pitta
+            </h3>
+            <p class="mt-2">+54 9 (291) 643 5841</p>
+            <p class="-mt-1">seguros@socoop.ar</p>
+          </div>
+        </div>
+      </section>
+
+      <!--Ofertas y promociones-->
+      <div class="container mx-auto text-center mt-[60px] mb-[20px]">
+        <h2 class="h2 text-primary">Novedades</h2>
+      </div>
+      <!--Banners---------------------------------------------------------------------------->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img class="hidden md:block" src="../Assets/banners/7.jpg" alt="" />
+            <img class="md:hidden" src="../Assets/banners/7_movil.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img class="hidden md:block" src="../Assets/banners/8.jpg" alt="" />
+            <img class="md:hidden" src="../Assets/banners/8_movil.jpg" alt="" />
+          </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <!--Imagenes------------------------------------------------------------------------->
+      <section class="container mx-auto mt-[80px] xl:mt-[100px]">
+        <!--Grid Layout-->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <!--Grid Item-->
+          <div
+            class="hover:shadow-xl transition-all ease-in-out duration-300 rounded-xl"
+          >
+            <img class="rounded-t-xl" src="../Assets/Img/25.jpg" alt="" />
+            <div class="bg-primary px-4 py-3 rounded-b-xl">
+              <h3 class="text-white font-medium">Seguros</h3>
+              <h3 class="text-gray-300 text-xs">Asegure su patrimonio.</h3>
+            </div>
+          </div>
+          <!--Grid Item-->
+          <div
+            class="hover:shadow-xl transition-all ease-in-out duration-300 rounded-xl"
+          >
+            <img class="rounded-t-xl" src="../Assets/Img/26.jpg" alt="" />
+            <div class="bg-primary px-4 py-3 rounded-b-xl">
+              <h3 class="text-white font-medium">Medicina Prepaga</h3>
+              <h3 class="text-gray-300 text-xs">
+                Cuide de usted y de sus seres queridos.
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Marcas--------------------------------------------------------------------------->
+      <section class="container mx-auto mt-[80px] xl:mt-[100px]">
+        <!--Grid layout-->
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4">
+          <!--Grid Item-->
+          <div class="rounded-md p-4">
+            <img
+              class="opacity-50 mx-auto"
+              src="../Assets/marcas/27.png"
+              alt=""
+            />
+          </div>
+          <!--Grid Item-->
+          <div class="rounded-md p-4">
+            <img
+              class="opacity-50 mx-auto"
+              src="../Assets/marcas/26.png"
+              alt=""
+            />
+          </div>
+          <!--Grid Item-->
+          <div class="rounded-md p-4">
+            <img
+              class="opacity-50 mx-auto"
+              src="../Assets/marcas/28.png"
+              alt=""
+            />
+          </div>
+          <!--Grid Item-->
+          <div class="rounded-md p-4">
+            <img
+              class="opacity-50 mx-auto"
+              src="../Assets/marcas/29.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <!--Domicilio--------------------------------------------------------------------->
+      <section class="container mx-auto mt-[40px] xl:mt-[60px]">
+        <!--Grid Layout-->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <!--Grid Item 1-->
+          <div class="p-4 text-center lg:text-left">
+            <h3 class="text-[24px] text-primary font-semibold">Encuéntrenos</h3>
+            <h3 class="text-[16px] text-gray-60 font-semibold mb-2 -mt-2">
+              Domicilio Físico
+            </h3>
+            <p class="">Presidente Alvear y Pasteur</p>
+            <p class="text-[14px] text-gray-400 -mt-1">
+              General San Martín, La Pampa.
+            </p>
+          </div>
+          <!--Grid Item 2-->
+          <div class="p-4 text-center lg:text-right lg:mt-4">
+            <a
+              class="bg-primary text-white px-4 py-2 rounded-lg"
+              href="../index.html#secciones"
+              ><i class="ri-arrow-left-line"></i>Volver a Secciones</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!--Contacto-------------------------------------------------------------------------->
+      <section class="contact mt-[60px] xl:mt-[100px] bg-contact relative z-20">
+        <div class="container mx-auto sm:rounded-[70px] py-[80px]">
+          <div class="max-w-[640px] mx-auto text-center">
+            <h2 class="h2 text-white mb-2">Contacto</h2>
+            <p class="text-white mb-4 max-w-sm xl:max-w-none mx-auto">
+              Contáctese con nosotros.
+            </p>
+            <a
+              href="contacto.html"
+              class="bg-accent py-2 px-8 rounded-lg font-medium text-white hover:shadow-md transition-all duration-200"
+            >
+              Ir a contacto<i class="ri-arrow-right-line text-white"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer--------------------------------------------------------------------------->
+    <footer class="footer relative z-20 bg-primary pt-[80px]">
+      <div class="container mx-auto px-0 text-white">
+        <div class="flex flex-col xl:flex-row xl:gap-[100px] xl:mb-[150px]">
+          <div
+            class="w-full max-w-[400px] mx-auto mb-8 text-center xl:text-left"
+          >
+            <!--Logo-->
+            <a class="flex justify-center xl:justify-start mb-2" href=""
+              ><img
+                class="w-40"
+                src="../Assets/Logo/LogoRGB_FondoOscuro.png"
+                alt=""
+            /></a>
+            <p class="mb-8 text-xl text-balance">
+              Sociedad Cooperativa Agrícola Ganadera Limitada.
+            </p>
+            <!--Socials-->
+            <ul
+              class="text-primary flex gap-[16px] justify-center xl:justify-start"
+            >
+              <li>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100075978953844"
+                  target="_blank"
+                  ><i class="ri-facebook-fill text-white"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/coopeagricolagsm?igsh=MXFmcHhxcnRhdmFxdg=="
+                  target="_blank"
+                  ><i class="ri-instagram-fill text-white"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="flex-1 flex flex-col xl:flex-row text-center xl:text-left gap-12 xl:gap-[100px] xl:justify-end"
+          >
+            <div class="">
+              <h3 class="h3 mb-3">Páginas</h3>
+              <ul class="flex flex-col gap-4">
+                <li><a href="nosotros.html">La Cooperativa</a></li>
+                <li><a href="secciones.html">Secciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="https://consultas.soccoop.ar/" target="_blank">Socios</a></li>
+              </ul>
+            </div>
+            <div class="">
+              <h3 class="h3 mb-3">Servicios</h3>
+              <ul class="flex flex-col gap-4">
+                <li><a href="hacienda.html">Hacienda</a></li>
+                <li><a href="combustibles.html">Combustibles</a></li>
+                <li><a href="cereales.html">Cereales</a></li>
+                <li><a href="ferreteria.html">Corralón</a></li>
+                <li><a href="supermercado.html">Supermercado</a></li>
+              </ul>
+            </div>
+            <div class="max-w-[260px] mx-auto xl:mx-0">
+              <h3 class="h3 mb-3">Contacto</h3>
+              <div class="flex flex-col gap-6 text-[16px]">
+                <p>
+                  Presidente Alvear y Pasteur. General San Martin, La Pampa,
+                  Argentina. CP (8206).
+                </p>
+                <p>contacto@soccoop.ar</p>
+                <p>(02925) - 497249 / 636</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Copyright-->
+      <p
+        class="text-center text-[12px] font-thin mt-10 py-5 bg-primary text-white"
+      >
+        Copyright &copy; 2024. Todos los derechos reservados.
+      </p>
+    </footer>
+
+    <!--JAVASCRIPTS FILES------------------------------------------------------------------------------------------------>
+    <!--SWIPER JS-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--Main Js-->
+    <script src="../js/main.js"></script>
+  </body>
+</html>
